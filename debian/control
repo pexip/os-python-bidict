@@ -1,0 +1,18 @@
+Source: python-bidict
+Section: python
+Priority: optional
+Maintainer: Pexip AS <packaging@pexip.com>
+Build-Depends: debhelper (>= 8.0.0), python-all (>= 2.6.6-3~), python-setuptools
+Standards-Version: 3.9.2
+Homepage: https://pypi.python.org/pypi/bidict
+
+Package: python-bidict
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: bidirectional (one-to-one) mapping data structure
+ bidict provides a bidirectional mapping data structure and related 
+ utilities (namedbidict, inverted) to naturally model one-to-one relations 
+ in Python. To keep the learning curve low, it introduces no new functions 
+ to the dict API you're already familiar with. It owes its simplicity to 
+ Python's slice syntax, which provides a handy and natural way of
+ expressing the inverse mapping in a bidict
